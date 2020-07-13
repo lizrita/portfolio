@@ -1,60 +1,91 @@
 body {
-	padding-top: 20px;
-	font-family: 'Homemade Apple', cursive;
-}
-h1{
-	/*font-family: 'Walter Turncoat', cursive;*/
-	font-family: 'Amatic SC', cursive;
-	font-size:10em;
-}
-.footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-top: 40px;
-  border-top: 1px solid #eee;
+  padding-bottom: 20px;
+  background-color: #FFFFFA;
+  background-image: url('../images/patterenedbackground.jpg');
+  font-family: 'Architects Daughter', cursive;
+  color: #312F2F;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
+#nav{
+	font-family:'Just Another Hand', cursive;
+	font-size: 1.2em;
 }
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
+#accent {
+	margin-top:0.5em;
 }
 
-.navbar {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7),to(#eee));
-  background-image: -webkit-linear-gradient(top, #f7f7f7 0%,#eee 100%);
-  background-image: -o-linear-gradient(top, #f7f7f7 0%,#eee 100%);
-  background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
-  border: 1px solid #e5e5e5;
+.navbar-nav a {
+	font-family:'Just Another Hand', cursive;
+	font-size:2em;
+	color: #312F2F;
+	letter-spacing: 0.1em;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .navbar-nav .nav-item {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
+/* mouse over link */
+.navbar-nav a:hover {
+	font-family:'Just Another Hand', cursive;
+	color: #828A95;
+	letter-spacing: 0.1em;
+	transition: 0.3s;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .masthead,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
+.header {
+	max-width: 100%;
+	height:auto;
+	text-align:center;
+}
+
+#heading {
+	background-image: url('../images/headerbackground.jpg');
+	width: 100%;
+	margin-bottom:1em;
+	margin-top:0.5em;
+}
+
+h1 {
+	font-family: 'Just Another Hand', cursive;
+	font-size: 2em;
+	display:inline;
+	color: #CC2936;
+}
+
+#body h2 {
+	font-family: 'Just Another Hand', cursive;
+	font-size: 2em;
+	letter-spacing:0.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #CC2936;
+}
+
+#body a{
+	color: #5b7c4d;
+}
+
+#socials{
+	position:absolute;
+	top:0;
+	right:0;
+}
+#socialnav{
+	display:none;
+}
+
+
+#footer{
+	font-size: 0.8em;
+	bottom: 0;
+	text-align: center;
+	margin-top:5em;
+}
+@media only screen and (max-width: 1000px){
+	#accent {
+		display:none;
+	}
+	#socials {
+		display:none;
+	}
+	#socialnav{
+	display:inline;
+	}
 }
